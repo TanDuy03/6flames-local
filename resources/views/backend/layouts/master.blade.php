@@ -42,6 +42,7 @@
     <script src="{{ asset('backend/assets/js/getlink.js')}}"></script>
     <script src="{{ asset('backend/ajax/cate-slide-status.js')}}"></script>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    @vite('resources/js/app.js')
 </head>
 
 <body>

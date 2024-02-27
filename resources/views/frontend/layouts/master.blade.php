@@ -73,6 +73,7 @@
 		gtag('js', new Date());
 		gtag('config', 'G-VX5Q3V7Z09');
 	</script>
+    @vite('resources/js/app.js')
 </head>
 
 <body>

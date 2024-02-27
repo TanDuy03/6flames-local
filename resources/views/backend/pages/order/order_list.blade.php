@@ -271,7 +271,7 @@
                                             </tbody>
                                         </table>
                                     </div>
-                                    {{$order->onEachSide(1)->links('backend.layouts.partials.pagination'),['page' => 'order_page']}}
+                                    {{$order->onEachSide(1)->links('backend.layouts.partials.pagination',['page' => 'order_page'])}}
                                 </div>
                                 <div class="tab-pane fade" id="navs-pills-top-profile" role="tabpanel">
                                     <div class="table-responsive text-nowrap" id="new-orders">
@@ -363,7 +363,7 @@
                                             </tbody>
                                         </table>
                                     </div>
-                                    {{$orderNew->onEachSide(1)->links('backend.layouts.partials.pagination'),['page' => 'order_new_page']}}
+                                    {{$orderNew->onEachSide(1)->links('backend.layouts.partials.pagination',['page' => 'order_new_page'])}}
                                 </div>
                                 <div class="tab-pane fade" id="navs-pills-top-messages" role="tabpanel">
                                     <div class="table-responsive text-nowrap">
@@ -455,7 +455,7 @@
                                             </tbody>
                                         </table>
                                     </div>
-                                    {{$orderConfirm->onEachSide(1)->links('backend.layouts.partials.pagination'),['page' => 'order_confirm']}}
+                                    {{$orderConfirm->onEachSide(1)->links('backend.layouts.partials.pagination',['page' => 'order_confirm'])}}
                                 </div>
                                 <div class="tab-pane fade" id="navs-pills-top-cancel" role="tabpanel">
                                     <div class="table-responsive text-nowrap">
@@ -547,7 +547,7 @@
                                             </tbody>
                                         </table>
                                     </div>
-                                    {{$orderCancel->onEachSide(1)->links('backend.layouts.partials.pagination'),['page' => 'order_cancel']}}
+                                    {{$orderCancel->onEachSide(1)->links('backend.layouts.partials.pagination',['page' => 'order_cancel'])}}
                                 </div>
                                 <div class="tab-pane fade" id="navs-pills-top-return" role="tabpanel">
                                     <div class="table-responsive text-nowrap">
@@ -639,7 +639,7 @@
                                             </tbody>
                                         </table>
                                     </div>
-                                    {{$orderReturn->onEachSide(1)->links('backend.layouts.partials.pagination'),['page' => 'order_return']}}
+                                    {{$orderReturn->onEachSide(1)->links('backend.layouts.partials.pagination',['page' => 'order_return'])}}
                                 </div>
                                 <div class="tab-pane fade" id="navs-pills-top-success" role="tabpanel">
                                     <div class="table-responsive text-nowrap">
@@ -731,7 +731,7 @@
                                             </tbody>
                                         </table>
                                     </div>
-                                    {{$orderSuccess->onEachSide(1)->links('backend.layouts.partials.pagination'),['page' => 'order_success']}}
+                                    {{$orderSuccess->onEachSide(1)->links('backend.layouts.partials.pagination',['page' => 'order_success'])}}
                                 </div>
                                 <div class="tab-pane fade" id="navs-pills-top-deli" role="tabpanel">
                                     <div class="table-responsive text-nowrap">
@@ -823,7 +823,7 @@
                                             </tbody>
                                         </table>
                                     </div>
-                                    {{$orderDeli->onEachSide(1)->links('backend.layouts.partials.pagination'),['page' => 'order_deli']}}
+                                    {{$orderDeli->onEachSide(1)->links('backend.layouts.partials.pagination',['page' => 'order_deli'])}}
                                 </div>
                         </div>
                     </div>
