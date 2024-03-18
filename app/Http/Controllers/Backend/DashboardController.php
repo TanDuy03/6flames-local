@@ -26,6 +26,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\View;
 use Maatwebsite\Excel\Facades\Excel;
 use Spatie\Analytics\Facades\Analytics;
+use Jenssegers\Agent\Agent;
 
 class DashboardController extends Controller
 {
@@ -158,9 +159,31 @@ class DashboardController extends Controller
             ];
         }
 
+        //User agent
+        $agent = new Agent();
+        $browser = $agent->browser();
+        $platform = $agent->platform();
+
+        if($platform) {
+            $platVersion = $agent->version($platform);
+        } else {
+            $platVersion = "Không xác định";
+        }
+
+        if($agent->isDesktop()) {
+            $device = "Desktop";
+        } else if($agent->isTablet()) {
+            $device = "Tablet";
+        } else if($agent->isMobile()) {
+            $device = "Mobile";
+        } else {
+            $device = "Không xác định";
+        }
 
         return view('backend.pages.dashboard',compact('revenue','totalOrder', 'countVisitor', 'chart_data', 'totalOrderToday',
-            'dataTotal', 'dataVisitor', 'onlineVisitorCount', 'dataOrder','dataTotalCoupon','couponName'));
+            'dataTotal', 'dataVisitor', 'onlineVisitorCount', 'dataOrder','dataTotalCoupon','couponName', 
+            'browser', 'platform', 'device', 'platVersion'
+        ));
     }
 
     public function indexPost(Request $request) 

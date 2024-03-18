@@ -11,6 +11,7 @@
         "google/analytics-data": "^0.9.5",
         "google/recaptcha": "~1.1",
         "guzzlehttp/guzzle": "^7.2",
+        "jenssegers/agent": "^2.6",
         "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.2",
         "laravel/socialite": "^5.9",
