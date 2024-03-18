@@ -16,3 +16,6 @@ yarn-error.log
 .DS_Store
 /vendor
 .env
+.user.ini
+php.ini
+/public/sneaker-square-aaad73a613ec.json
