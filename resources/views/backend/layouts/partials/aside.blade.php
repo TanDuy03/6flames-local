@@ -5,7 +5,6 @@
             <span class="app-brand-logo demo">
                 <img class="logo-aside-admin" src="{{asset('backend/assets/img/logo_sn.png')}}" alt="">
             </span>
-            {{-- <span class="app-brand-text demo menu-text fw-bolder ms-2">Sneaker Square</span> --}}
         </a>
 
         <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
