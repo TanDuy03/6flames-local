@@ -193,6 +193,8 @@ class DashboardController extends Controller
         $onlineVisitorCount = $onlineVisitors->count();
         if($request->ajax()) {
             return response()->json(['visitorTotal' => $onlineVisitorCount]);
+        } else {
+            return response()->json(['visitorTotal' => 0]);
         }
     }
     
