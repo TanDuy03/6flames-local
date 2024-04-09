@@ -131,7 +131,7 @@ class BlogAdminController extends Controller
         {
             $file = $request->file('img_blog');
             $extension = $file->getClientOriginalExtension();
-            $file_name = time().'.'.$extension;
+            $file_name = $request->slug.'.'.$extension;
             $file->move(public_path('backend/uploads/blog/'), $file_name);
             $news->news_img = 'backend/uploads/blog/'.$file_name;
         } 

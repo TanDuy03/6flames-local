@@ -27,7 +27,7 @@ class GenerateSitemap extends Command
      */
     public function handle()
     {
-        SitemapGenerator::create('https://6flames.id.vn')
+        SitemapGenerator::create('http://127.0.0.1:8000/')
         ->hasCrawled(function (Url $url) {
             return $url->setChangeFrequency('weekly');
         })->writeToFile(public_path('sitemap.xml'));
