@@ -18,3 +18,4 @@ yarn-error.log
 .env
 .user.ini
 php.ini
+flames_sneaker_db.sql
